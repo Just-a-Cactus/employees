@@ -6,7 +6,7 @@
     const xhr = new XMLHttpRequest();
     let DB = [];
 
-    xhr.open('GET', '../data/employees.json');
+    xhr.open('GET', './data/employees.json');
     xhr.send();
     xhr.onload = function () {
         DB = JSON.parse(this.responseText);
